@@ -1,0 +1,536 @@
+1- server threads should be a selectable option: 2, 4, 6. not the slide bar.     
+
+2- terminal output is noisy:     
+""" 
+~ $ ls
+logs  models  tmp
+~ $ sd
+/sdcard $ ls
+Alarms      Download       Podcasts
+Android     Movies         Recordings
+Audiobooks  Music          Ringtones
+DCIM        Notifications
+Documents   Pictures
+/sdcard $ cd Download/
+/sdcard/Download $ ls
+2026_272921_Regular.pdf
+8K_Context_Agent_Harness_Report.pdf
+AI_Chat_ex_de_re.apk
+Aetherix-Alpine-Fork
+Aetherix-Alpine_INPUT
+Aetherix-Alpine_OUTPUT
+Aetherix-Alpine_v0.4.7_2
+Aetherix-Alpine_v04x_series
+Aetherix-Alpine_working_core.zip
+Aetherix-Box_dev_0.0.9-main.zip
+Aetherix-Datasets-main.zip
+Aetherix-Debian-Project
+Aetherix-HF_v0.02.apk
+Aetherix-Shell-Report.pdf
+Aetherix-Shell-T11-T15-tests.txt
+Aetherix-Shell-no_proot
+Aetherix-Shell-v1.0.35+36-source.zip
+Aetherix-Shell-v1.0.35+36.apk
+Aetherix-Shell-v22-fieldtest.txt
+Aetherix-oCode
+Aetherix-oCode-v1.0.2+5.apk
+Aetherix-original-may\ not\ work
+Aetherix-with_settings.apk
+Aetherix.zip
+Alpine_dev
+August_project_backup_2026
+BUD_Profiler_v0.0.13.apk
+BionicShell
+BionicShell_File_Cabinet
+Comparative_Analysis_of_UserLAnd_and_Aetherix_Box_Proot_Implementation_and_Debugging.pdf
+DuckDuckGo
+EXA_SAMPLES.txt
+EXA_key_DroidSpectre.txt
+EXA_setup_guide_DroidSpectre.txt
+IRS_Mileage_2026-09-03.txt
+IRS_Mileage_2026-09-05.txt
+Kimi-llama-java-app.txt
+LLM_Terminal_Research
+Lumo_generated_2026-07-14_16_54-1784066191984.png
+Lumo_generated_2026-07-14_16_58-1784066526700.png
+MSDH_Medical_Cannabis101\ booklet.pdf
+My_Speed_X-working_v7.apk
+Plexitor-2.apk
+Python-Tavily_Research_script.txt
+Roadside-v0.1.2-debug.apk
+Screenshot_20260719_054722.jpg
+Sept_Projects
+Tav-search-main.zip
+Tavily_Report-Free_Search_Access.txt
+Tavily_Research_example.py.txt
+Tavily_key_GitHub_DroidSpectre.txt
+Tavily_search_explained.txt
+UBER_Background-Check_August_2026.pdf
+app-debug-v0.4.apk
+deepseek_api_key_1.txt
+doc_prompt.txt
+example_tavily_research.py.txt
+free_crypto_api.txt
+grok_image_1784065598840.jpg
+harness-8k
+hf-models
+image-1.jpg
+image-2.jpg
+image.jpg
+install_llama-cpp.txt
+linuxdeploy-2.6.0-259.apk
+llama-b9902-bin-android-arm64.tar.gz
+llama.cpp-android-java-main.zip
+llama.cpp-master.zip
+llama_cpp_build_deps.txt
+lyft_bgc_08_19_2026.pdf
+models
+openrouter_key_2.txt
+openrouter_key_GitHub.txt
+resignation_examples.txt
+resume_2026.docx
+resumes
+superpowers-main
+superpowers-main.zip
+tav-v3-main.zip
+training_data
+ts1-master.zip
+userland_vs_aetherix-box.txt
+/sdcard/Download $ dir
+total 735305
+-rw-rw----  1 u0_a274 media_rw        32 2026-07-13 03:58 .exmu-cfg1.data
+drwxrws---  2 u0_a274 media_rw      3452 2026-07-07 14:25 .td1664c_ABC687CDF1F2064C572B3CCA0DB6902F5904FA6F1442BD22E3F326F6B08DC01763E48ECCA523B8A5582632A6673A0864
+-rw-rw----  1 u0_a274 media_rw     40048 2026-07-09 11:44 2026_272921_Regular.pdf
+-rw-rw----  1 u0_a274 media_rw     45827 2026-10-04 15:35 8K_Context_Agent_Harness_Report.pdf
+-rwxrwx---  1 u0_a274 media_rw 355886327 2026-08-03 00:05 AI_Chat_ex_de_re.apk
+drwxrws---  4 u0_a274 media_rw      3452 2026-10-03 01:49 Aetherix-Alpine-Fork
+drwxrws---  2 u0_a274 media_rw      3452 2026-08-11 07:10 Aetherix-Alpine_INPUT
+drwxrws---  2 u0_a274 media_rw      3452 2026-09-11 17:29 Aetherix-Alpine_OUTPUT
+drwxrws---  3 u0_a274 media_rw      3452 2026-08-20 09:40 Aetherix-Alpine_v0.4.7_2
+drwxrws--- 12 u0_a274 media_rw      3452 2026-10-03 01:49 Aetherix-Alpine_v04x_series
+-rw-rw----  1 u0_a274 media_rw   3842530 2026-09-01 15:11 Aetherix-Alpine_working_core.zip
+-rw-rw----  1 u0_a274 media_rw  27328520 2026-07-19 12:34 Aetherix-Box_dev_0.0.9-main.zip
+-rw-rw----  1 u0_a274 media_rw   8390181 2026-08-13 13:24 Aetherix-Datasets-main.zip
+drwxrws---  9 u0_a274 media_rw      3452 2026-10-12 10:40 Aetherix-Debian-Project
+-rw-rw----  1 u0_a274 media_rw     87591 2026-10-22 15:30 Aetherix-HF_v0.02.apk
+-rw-rw----  1 u0_a274 media_rw     17842 2026-10-12 17:24 Aetherix-Shell-Report.pdf
+-rw-rw----  1 u0_a274 media_rw      2656 2026-10-03 16:12 Aetherix-Shell-T11-T15-tests.txt
+drwxrws---  9 u0_a274 media_rw      3452 2026-10-19 14:33 Aetherix-Shell-no_proot
+-rw-rw----  1 u0_a274 media_rw    167112 2026-10-19 19:07 Aetherix-Shell-v1.0.35+36-source.zip
+-rw-rw----  1 u0_a274 media_rw     90996 2026-10-19 19:07 Aetherix-Shell-v1.0.35+36.apk
+-rw-rw----  1 u0_a274 media_rw      2364 2026-10-12 22:09 Aetherix-Shell-v22-fieldtest.txt
+drwxrws--- 10 u0_a274 media_rw      3452 2026-10-21 02:32 Aetherix-oCode
+-rw-rw----  1 u0_a274 media_rw 139560790 2026-10-20 13:37 Aetherix-oCode-v1.0.2+5.apk
+drwxrws---  4 u0_a274 media_rw      3452 2026-07-08 18:59 Aetherix-original-may\ not\ work
+-rwxrwx---  1 u0_a274 media_rw   4365527 2026-07-10 12:59 Aetherix-with_settings.apk
+-rw-rw----  1 u0_a274 media_rw  39781046 2026-07-08 14:04 Aetherix.zip
+drwxrws---  6 u0_a274 media_rw      3452 2026-10-03 01:49 Alpine_dev
+drwxrws---  4 u0_a274 media_rw      3452 2026-09-28 15:41 August_project_backup_2026
+-rwxrwx---  1 u0_a274 media_rw   5728452 2026-08-02 22:12 BUD_Profiler_v0.0.13.apk
+drwxrws--- 17 u0_a274 media_rw      3452 2026-10-23 00:39 BionicShell
+drwxrws---  3 u0_a274 media_rw      3452 2026-10-22 23:15 BionicShell_File_Cabinet
+-rwxrwx---  1 u0_a274 media_rw     50160 2026-07-19 12:24 Comparative_Analysis_of_UserLAnd_and_Aetherix_Box_Proot_Implementation_and_Debugging.pdf
+drwxrws---  2 u0_a274 media_rw      3452 2026-06-30 21:39 DuckDuckGo
+-rw-rw----  1 u0_a274 media_rw      4744 2026-08-03 07:26 EXA_SAMPLES.txt
+-rw-rw----  1 u0_a274 media_rw        36 2026-08-03 06:57 EXA_key_DroidSpectre.txt
+-rw-rw----  1 u0_a274 media_rw     14452 2026-08-03 06:59 EXA_setup_guide_DroidSpectre.txt
+-rwxrwx---  1 u0_a274 media_rw      2456 2026-09-03 12:49 IRS_Mileage_2026-09-03.txt
+-rwxrwx---  1 u0_a274 media_rw      3149 2026-09-05 22:33 IRS_Mileage_2026-09-05.txt
+-rw-rw----  1 u0_a274 media_rw      8436 2026-07-07 14:47 Kimi-llama-java-app.txt
+drwxrws---  2 u0_a274 media_rw      3452 2026-10-22 08:23 LLM_Terminal_Research
+-rw-rw----  1 u0_a274 media_rw    136439 2026-07-14 16:56 Lumo_generated_2026-07-14_16_54-1784066191984.png
+-rw-rw----  1 u0_a274 media_rw    209085 2026-07-14 17:02 Lumo_generated_2026-07-14_16_58-1784066526700.png
+-rwxrwx---  1 u0_a274 media_rw   1551737 2026-10-23 09:21 MSDH_Medical_Cannabis101\ booklet.pdf
+-rw-rw----  1 u0_a274 media_rw   4830762 2026-09-02 20:00 My_Speed_X-working_v7.apk
+-rwxrwx---  1 u0_a274 media_rw   3359504 2026-07-06 19:58 Plexitor-2.apk
+-rw-rw----  1 u0_a274 media_rw       609 2026-08-03 08:21 Python-Tavily_Research_script.txt
+-rw-rw----  1 u0_a274 media_rw  11746893 2026-08-21 00:13 Roadside-v0.1.2-debug.apk
+-rwxrwx---  1 u0_a274 media_rw    676498 2026-07-19 08:30 Screenshot_20260719_054722.jpg
+drwxrws---  2 u0_a274 media_rw      3452 2026-09-12 08:10 Sept_Projects
+-rw-rw----  1 u0_a274 media_rw     98238 2026-07-07 13:13 Tav-search-main.zip
+-rw-rw----  1 u0_a274 media_rw     25427 2026-08-03 08:19 Tavily_Report-Free_Search_Access.txt
+-rw-rw----  1 u0_a274 media_rw       609 2026-07-10 13:18 Tavily_Research_example.py.txt
+-rw-rw----  1 u0_a274 media_rw        41 2026-08-03 07:54 Tavily_key_GitHub_DroidSpectre.txt
+-rw-rw----  1 u0_a274 media_rw      9757 2026-07-07 03:39 Tavily_search_explained.txt
+-rwxrwx---  1 u0_a274 media_rw    213464 2026-08-30 18:08 UBER_Background-Check_August_2026.pdf
+-rwxrwx---  1 u0_a274 media_rw   6838930 2026-09-05 10:08 app-debug-v0.4.apk
+-rw-rw----  1 u0_a274 media_rw        35 2026-10-03 01:06 deepseek_api_key_1.txt
+-rw-rw----  1 u0_a274 media_rw      2459 2026-07-18 18:31 doc_prompt.txt
+-rw-rw----  1 u0_a274 media_rw       609 2026-07-06 21:51 example_tavily_research.py.txt
+-rw-rw----  1 u0_a274 media_rw      2974 2026-07-25 15:14 free_crypto_api.txt
+-rwxrwx---  1 u0_a274 media_rw    220840 2026-07-14 16:46 grok_image_1784065598840.jpg
+drwxrws---  7 u0_a274 media_rw      3452 2026-10-07 18:23 harness-8k
+drwxrws---  3 u0_a274 media_rw      3452 2026-10-22 15:39 hf-models
+-rw-rw----  1 u0_a274 media_rw    372581 2026-07-14 16:50 image-1.jpg
+-rw-rw----  1 u0_a274 media_rw    416478 2026-07-14 16:50 image-2.jpg
+-rw-rw----  1 u0_a274 media_rw    407707 2026-07-14 16:47 image.jpg
+-rw-rw----  1 u0_a274 media_rw       156 2026-07-13 20:11 install_llama-cpp.txt
+-rw-rw----  1 u0_a274 media_rw  17932601 2026-07-19 16:51 linuxdeploy-2.6.0-259.apk
+-rw-rw----  1 u0_a274 media_rw  78731703 2026-07-07 14:46 llama-b9902-bin-android-arm64.tar.gz
+-rw-rw----  1 u0_a274 media_rw   1262505 2026-07-08 16:48 llama.cpp-android-java-main.zip
+-rw-rw----  1 u0_a274 media_rw  36597876 2026-07-07 14:39 llama.cpp-master.zip
+-rw-rw----  1 u0_a274 media_rw       240 2026-07-13 06:50 llama_cpp_build_deps.txt
+-rw-rw----  1 u0_a274 media_rw    284058 2026-08-19 22:30 lyft_bgc_08_19_2026.pdf
+drwxrws---  2 u0_a274 media_rw      3452 2026-10-22 15:39 models
+-rw-rw----  1 u0_a274 media_rw       148 2026-08-06 19:00 openrouter_key_2.txt
+-rw-rw----  1 u0_a274 media_rw        73 2026-07-19 09:07 openrouter_key_GitHub.txt
+-rw-rw----  1 u0_a274 media_rw      1606 2026-07-10 13:06 resignation_examples.txt
+-rw-rw----  1 u0_a274 media_rw     24362 2026-08-29 00:26 resume_2026.docx
+drwxrws---  3 u0_a274 media_rw      3452 2026-08-20 11:45 resumes
+drwxrws--- 16 u0_a274 media_rw      3452 2026-07-02 16:56 superpowers-main
+-rw-rw----  1 u0_a274 media_rw    550431 2026-07-19 16:14 superpowers-main.zip
+-rw-rw----  1 u0_a274 media_rw     14222 2026-07-07 13:13 tav-v3-main.zip
+drwxrws---  7 u0_a274 media_rw      3452 2026-08-12 09:39 training_data
+-rw-rw----  1 u0_a274 media_rw     20817 2026-07-07 13:12 ts1-master.zip
+-rw-rw----  1 u0_a274 media_rw     21414 2026-07-19 12:29 userland_vs_aetherix-box.txt
+/sdcard/Download $ cd
+~ $ cd models
+~/models $
+""" 
+     
+3- the prompt '~$' doesnt update to '~/sdcard/', instead, it's as shown in the terminal. i thought we made the prompt filepath adaptive to show the filepath truncated like Termux & Alpine?     
+
+4- diagnostics:     
+""" 
+BionicShell diagnostics
+time=2026-10-23 10:25:45.839
+version=0.9.4 (20)
+device=samsung SM-S166V
+android=16 sdk=36
+abi=arm64-v8a
+server=stopped
+model=/data/user/0/dev.bionicshell.app/files/models/Qwen3.5-0.8B-IQ4_XS.gguf
+reasoning=off context=4096 threads=2
+
+=== System ===
+[2026-10-23 09:55:54.307] storage: downloads=/storage/emulated/0/Download
+[2026-10-22 15:17:01.688] app start
+[2026-10-22 15:24:52.122] settings: opened
+[2026-10-22 15:24:56.585] permission request: notifications
+[2026-10-22 15:24:58.204] permission result: notifications=granted
+[2026-10-22 15:24:59.465] permission screen: all files access
+[2026-10-22 15:25:04.091] permission screen: battery optimization
+[2026-10-22 15:25:23.118] settings: opened
+[2026-10-22 15:26:57.829] settings: context=4096 threads=4 temp=0.70 reasoning=false
+[2026-10-22 15:39:24.052] settings: opened
+[2026-10-22 22:07:17.500] app start
+[2026-10-22 22:09:17.876] app start
+[2026-10-22 22:13:28.334] settings: context=4096 threads=4 temp=0.70 reasoning=false
+[2026-10-22 22:17:49.646] download start: LFM2.5-1.2B-Instruct-Q4_K_M.gguf
+[2026-10-22 22:18:02.340] download done: /storage/emulated/0/Download/BionicShell_File_Cabinet/models/LFM2.5-1.2B-Instruct-Q4_K_M.gguf
+[2026-10-22 22:18:53.062] settings: context=4096 threads=4 temp=0.70 reasoning=false
+[2026-10-22 22:26:53.352] download start: Huihui-Qwen3.5-0.8B-abliterated.i1-IQ4_XS.gguf
+[2026-10-22 22:27:04.257] download done: /storage/emulated/0/Download/BionicShell_File_Cabinet/models/Huihui-Qwen3.5-0.8B-abliterated.i1-IQ4_XS.gguf
+[2026-10-22 22:47:22.346] app start
+[2026-10-22 22:48:16.494] settings: opened
+[2026-10-22 23:15:02.187] app start
+[2026-10-22 23:16:53.624] download start: Qwen3.5-0.8B-IQ4_XS.gguf
+[2026-10-22 23:17:03.737] download done: /data/user/0/dev.bionicshell.app/files/models/Qwen3.5-0.8B-IQ4_XS.gguf
+[2026-10-22 23:17:43.212] settings: context=4096 threads=4 temp=0.70 reasoning=false
+[2026-10-22 23:24:14.193] settings: context=4096 threads=4 temp=0.70 reasoning=false
+[2026-10-22 23:26:37.271] app start
+[2026-10-22 23:57:16.605] app start
+[2026-10-23 09:55:54.364] app start
+[2026-10-23 09:56:32.800] settings: opened
+[2026-10-23 10:02:39.804] settings: context=4096 threads=2 reasoning=false
+
+=== Terminal ===
+[2026-10-22 15:17:01.855] session start pid=32646 rows=24 cols=80
+[2026-10-22 15:17:02.063] resize rows=39 cols=46
+[2026-10-22 15:24:11.042] resize rows=20 cols=46
+[2026-10-22 15:24:33.097] resize rows=39 cols=46
+[2026-10-22 15:24:42.578] resize rows=20 cols=46
+[2026-10-22 15:24:50.550] resize rows=39 cols=46
+[2026-10-22 15:25:29.002] resize rows=20 cols=46
+[2026-10-22 15:25:52.838] resize rows=39 cols=46
+[2026-10-22 15:26:06.588] resize rows=20 cols=46
+[2026-10-22 15:26:30.232] resize rows=39 cols=46
+[2026-10-22 15:26:35.537] transcript share chars=2775
+[2026-10-22 15:39:13.451] resize rows=20 cols=46
+[2026-10-22 15:39:22.353] resize rows=39 cols=46
+[2026-10-22 15:41:39.169] session close requested pid=32646
+[2026-10-22 22:09:17.984] session start pid=16820 rows=24 cols=80
+[2026-10-22 22:09:18.100] resize rows=39 cols=46
+[2026-10-22 22:09:18.340] resize rows=20 cols=46
+[2026-10-22 22:09:19.864] resize rows=39 cols=46
+[2026-10-22 22:47:25.569] session start pid=8737 rows=24 cols=80
+[2026-10-22 22:47:25.643] resize rows=39 cols=46
+[2026-10-22 22:47:27.097] resize rows=20 cols=46
+[2026-10-22 22:48:13.593] resize rows=39 cols=46
+[2026-10-22 22:48:26.257] session close requested pid=8737
+[2026-10-22 22:48:26.281] session exit status=0
+[2026-10-22 22:48:26.281] session start pid=8992 rows=24 cols=80
+[2026-10-22 22:48:26.294] resize rows=39 cols=46
+[2026-10-22 22:49:33.403] session close requested pid=8992
+[2026-10-22 23:15:02.326] session start pid=15761 rows=24 cols=80
+[2026-10-22 23:15:02.458] resize rows=39 cols=46
+[2026-10-22 23:15:10.243] resize rows=20 cols=46
+[2026-10-22 23:16:04.895] resize rows=39 cols=46
+[2026-10-22 23:16:12.087] transcript share chars=218
+[2026-10-22 23:26:37.388] session start pid=28158 rows=24 cols=80
+[2026-10-22 23:26:37.668] resize rows=39 cols=46
+[2026-10-23 09:55:54.544] session start pid=22941 rows=24 cols=80
+[2026-10-23 09:55:54.685] resize rows=39 cols=46
+[2026-10-23 09:55:57.347] resize rows=20 cols=46
+[2026-10-23 09:56:28.753] resize rows=39 cols=46
+[2026-10-23 09:56:58.756] resize rows=20 cols=46
+[2026-10-23 09:57:12.478] resize rows=39 cols=46
+[2026-10-23 09:59:21.858] transcript share chars=9540
+
+=== Server ===
+[2026-10-22 15:27:09.046] API key changed
+[2026-10-22 15:27:17.006] started on http://localhost:8080
+[2026-10-22 15:27:17.084] service: foreground service started
+[2026-10-22 15:27:17.178] warning: no usable GPU found, --gpu-layers option will be ignored
+[2026-10-22 15:27:17.179] warning: one possible reason is that llama.cpp was compiled without GPU support
+[2026-10-22 15:27:17.179] warning: consult docs/build.md for compilation instructions
+[2026-10-22 15:27:17.179] 0.00.034.719 I srv  llama_server: initializing ...
+[2026-10-22 15:27:17.180] 0.00.034.790 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+[2026-10-22 15:27:17.186] 0.00.042.191 I srv    load_model: loading model '/storage/emulated/0/BionicShell/models/Qwen3.5-0.8B-IQ4_XS.gguf'
+[2026-10-22 15:27:20.777] 0.03.634.057 I cmn          init: llama threadpool init, n_threads = 4
+[2026-10-22 15:27:21.188] 0.04.044.271 I srv    load_model: initializing, n_slots = 4, n_ctx_slot = 4096, kv_unified = 'true'
+[2026-10-22 15:27:21.226] 0.04.082.282 I srv  llama_server: model loaded
+[2026-10-22 15:27:21.226] 0.04.082.359 I srv  llama_server: listening on http://127.0.0.1:8080
+[2026-10-22 15:27:50.118] stopped
+[2026-10-22 15:27:50.145] service: foreground service stopped
+[2026-10-22 22:13:31.672] started on http://localhost:8080
+[2026-10-22 22:13:31.755] service: foreground service started
+[2026-10-22 22:13:31.791] warning: no usable GPU found, --gpu-layers option will be ignored
+[2026-10-22 22:13:31.793] warning: one possible reason is that llama.cpp was compiled without GPU support
+[2026-10-22 22:13:31.796] warning: consult docs/build.md for compilation instructions
+[2026-10-22 22:13:31.799] 0.00.032.845 I srv  llama_server: initializing ...
+[2026-10-22 22:13:31.802] 0.00.032.950 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+[2026-10-22 22:13:31.804] 0.00.040.757 I srv    load_model: loading model '/storage/emulated/0/Download/BionicShell_File_Cabinet/models/Qwen3.5-0.8B-IQ4_XS-1.gguf'
+[2026-10-22 22:13:34.626] 0.02.867.352 I cmn          init: llama threadpool init, n_threads = 4
+[2026-10-22 22:13:35.051] 0.03.292.166 I srv    load_model: initializing, n_slots = 4, n_ctx_slot = 4096, kv_unified = 'true'
+[2026-10-22 22:13:35.080] 0.03.321.746 I srv  llama_server: model loaded
+[2026-10-22 22:13:35.083] 0.03.322.787 I srv  llama_server: listening on http://127.0.0.1:8080
+[2026-10-22 22:13:54.623] 0.22.863.503 W srv    operator(): unauthorized: Invalid API Key
+[2026-10-22 22:13:54.636] 0.22.877.441 W srv    operator(): unauthorized: Invalid API Key
+[2026-10-22 22:13:55.455] 0.23.696.405 W srv    operator(): unauthorized: Invalid API Key
+[2026-10-22 22:13:55.525] 0.23.766.416 W srv    operator(): unauthorized: Invalid API Key
+[2026-10-22 22:14:20.964] 0.49.202.889 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1
+[2026-10-22 22:14:21.028] 0.49.216.080 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+[2026-10-22 22:14:35.426] 1.03.664.130 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    322, progress = 0.96, t =  14.44 s / 22.29 tokens per second
+[2026-10-22 22:14:36.145] 1.04.375.172 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    331, progress = 0.99, t =  15.16 s / 21.84 tokens per second
+[2026-10-22 22:14:38.855] 1.07.096.031 I slot print_timing: id  0 | task 0 | prompt eval time =   15928.49 ms /   335 tokens (   47.55 ms per token,    21.03 tokens per second)
+[2026-10-22 22:14:38.864] 1.07.096.075 I slot print_timing: id  0 | task 0 |        eval time =    1946.88 ms /    10 tokens (  216.32 ms per token,     4.62 tokens per second)
+[2026-10-22 22:14:38.868] 1.07.096.080 I slot print_timing: id  0 | task 0 |       total time =   17875.37 ms /   345 tokens
+[2026-10-22 22:14:38.872] 1.07.096.085 I slot print_timing: id  0 | task 0 |    graphs reused =          9
+[2026-10-22 22:14:38.876] 1.07.096.088 I slot print_timing: id  0 | task 0 |   graph reallocs =          0    /     0        (same size) / (changed size)
+[2026-10-22 22:14:38.881] 1.07.099.295 I slot      release: id  0 | task 0 | stop processing: n_tokens = 344, truncated = 0
+[2026-10-22 22:15:10.048] 1.38.283.746 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.919 (> 0.100 thold), f_keep = 0.962
+[2026-10-22 22:15:10.184] 1.38.298.979 I slot launch_slot_: id  0 | task 13 | processing task, is_child = 0
+[2026-10-22 22:15:15.001] 1.43.242.320 I slot print_timing: id  0 | task 13 | prompt processing, n_tokens =     11, progress = 0.95, t =   4.94 s / 2.23 tokens per second
+[2026-10-22 22:15:16.496] 1.44.737.024 I slot print_timing: id  0 | task 13 | prompt processing, n_tokens =     25, progress = 0.99, t =   6.44 s / 3.88 tokens per second
+[2026-10-22 22:15:20.442] 1.48.679.053 I slot print_timing: id  0 | task 13 | prompt eval time =    7120.32 ms /    29 tokens (  245.53 ms per token,     4.07 tokens per second)
+[2026-10-22 22:15:20.481] 1.48.679.103 I slot print_timing: id  0 | task 13 |        eval time =    3256.72 ms /    21 tokens (  162.84 ms per token,     6.14 tokens per second)
+[2026-10-22 22:15:20.489] 1.48.679.109 I slot print_timing: id  0 | task 13 |       total time =   10377.05 ms /    50 tokens
+[2026-10-22 22:15:20.496] 1.48.679.113 I slot print_timing: id  0 | task 13 |    graphs reused =         28
+[2026-10-22 22:15:20.502] 1.48.681.880 I slot print_timing: id  0 | task 13 |   graph reallocs =          0    /     0        (same size) / (changed size)
+[2026-10-22 22:15:20.508] 1.48.689.807 I slot      release: id  0 | task 13 | stop processing: n_tokens = 380, truncated = 0
+[2026-10-22 22:18:41.869] stopped
+[2026-10-22 22:18:41.899] service: foreground service stopped
+[2026-10-22 22:18:54.815] started on http://localhost:8080
+[2026-10-22 22:18:54.861] service: foreground service started
+[2026-10-22 22:18:54.940] warning: no usable GPU found, --gpu-layers option will be ignored
+[2026-10-22 22:18:54.942] warning: one possible reason is that llama.cpp was compiled without GPU support
+[2026-10-22 22:18:54.944] warning: consult docs/build.md for compilation instructions
+[2026-10-22 22:18:54.946] 0.00.030.078 I srv  llama_server: initializing ...
+[2026-10-22 22:18:54.947] 0.00.030.102 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+[2026-10-22 22:18:54.949] 0.00.038.453 I srv    load_model: loading model '/storage/emulated/0/Download/BionicShell_File_Cabinet/models/LFM2.5-1.2B-Instruct-Q4_K_M.gguf'
+[2026-10-22 22:18:58.710] 0.03.796.749 I cmn          init: llama threadpool init, n_threads = 4
+[2026-10-22 22:18:59.133] 0.04.221.428 I srv    load_model: initializing, n_slots = 4, n_ctx_slot = 4096, kv_unified = 'true'
+[2026-10-22 22:18:59.177] 0.04.265.736 I srv  llama_server: model loaded
+[2026-10-22 22:18:59.181] 0.04.265.783 I srv  llama_server: listening on http://127.0.0.1:8080
+[2026-10-22 22:20:12.689] 1.17.773.282 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1
+[2026-10-22 22:20:12.755] 1.17.790.711 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+[2026-10-22 22:20:19.217] 1.24.279.897 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    139, progress = 0.97, t =   6.48 s / 21.45 tokens per second
+[2026-10-22 22:20:56.242] 2.01.291.447 I slot print_timing: id  0 | task 0 | prompt eval time =    8839.45 ms /   143 tokens (   61.81 ms per token,    16.18 tokens per second)
+[2026-10-22 22:20:56.290] 2.01.291.477 I slot print_timing: id  0 | task 0 |        eval time =   34655.59 ms /    17 tokens ( 2165.97 ms per token,     0.46 tokens per second)
+[2026-10-22 22:20:56.300] 2.01.291.480 I slot print_timing: id  0 | task 0 |       total time =   43495.04 ms /   160 tokens
+[2026-10-22 22:20:56.312] 2.01.291.486 I slot print_timing: id  0 | task 0 |    graphs reused =         16
+[2026-10-22 22:20:56.317] 2.01.291.960 I slot print_timing: id  0 | task 0 |   graph reallocs =          0    /     0        (same size) / (changed size)
+[2026-10-22 22:20:56.333] 2.01.296.298 I slot      release: id  0 | task 0 | stop processing: n_tokens = 159, truncated = 0
+[2026-10-22 22:21:28.340] stopped
+[2026-10-22 22:21:28.391] service: foreground service stopped
+[2026-10-22 22:29:11.647] started on http://localhost:8080
+[2026-10-22 22:29:11.766] service: foreground service started
+[2026-10-22 22:29:11.793] warning: no usable GPU found, --gpu-layers option will be ignored
+[2026-10-22 22:29:11.797] warning: one possible reason is that llama.cpp was compiled without GPU support
+[2026-10-22 22:29:11.800] warning: consult docs/build.md for compilation instructions
+[2026-10-22 22:29:11.804] 0.00.038.563 I srv  llama_server: initializing ...
+[2026-10-22 22:29:11.809] 0.00.038.595 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+[2026-10-22 22:29:11.811] 0.00.045.763 I srv    load_model: loading model '/storage/emulated/0/Download/BionicShell_File_Cabinet/models/Huihui-Qwen3.5-0.8B-abliterated.i1-IQ4_XS.gguf'
+[2026-10-22 22:29:15.296] 0.03.539.733 I cmn          init: llama threadpool init, n_threads = 4
+[2026-10-22 22:29:15.630] 0.03.875.424 I srv    load_model: initializing, n_slots = 4, n_ctx_slot = 4096, kv_unified = 'true'
+[2026-10-22 22:29:15.653] 0.03.898.301 I srv  llama_server: model loaded
+[2026-10-22 22:29:15.660] 0.03.898.317 I srv  llama_server: listening on http://127.0.0.1:8080
+[2026-10-22 22:29:45.121] 0.33.361.803 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1
+[2026-10-22 22:29:45.169] 0.33.373.600 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+[2026-10-22 22:30:00.274] 0.48.516.103 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    322, progress = 0.94, t =  15.14 s / 21.27 tokens per second
+[2026-10-22 22:30:00.954] 0.49.199.315 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    338, progress = 0.99, t =  15.82 s / 21.36 tokens per second
+[2026-10-22 22:30:14.004] 1.02.248.789 I slot print_timing: id  0 | task 0 | n_gen =    100, tg =   8.00 t/s, tg_3s =   8.08 t/s
+[2026-10-22 22:30:17.252] 1.05.494.474 I slot print_timing: id  0 | task 0 | n_gen =    111, tg =   7.04 t/s, tg_3s =   3.39 t/s
+[2026-10-22 22:30:17.940] 1.06.183.831 I slot print_timing: id  0 | task 0 | prompt eval time =   16503.04 ms /   342 tokens (   48.25 ms per token,    20.72 tokens per second)
+[2026-10-22 22:30:17.948] 1.06.185.044 I slot print_timing: id  0 | task 0 |        eval time =   16299.85 ms /   112 tokens (  146.85 ms per token,     6.81 tokens per second)
+[2026-10-22 22:30:17.961] 1.06.185.051 I slot print_timing: id  0 | task 0 |       total time =   32802.89 ms /   454 tokens
+[2026-10-22 22:30:17.970] 1.06.185.055 I slot print_timing: id  0 | task 0 |    graphs reused =        111
+[2026-10-22 22:30:17.975] 1.06.185.058 I slot print_timing: id  0 | task 0 |   graph reallocs =          0    /     0        (same size) / (changed size)
+[2026-10-22 22:30:17.980] 1.06.194.666 I slot      release: id  0 | task 0 | stop processing: n_tokens = 453, truncated = 0
+[2026-10-22 22:30:41.892] 1.30.133.045 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.722 (> 0.100 thold), f_keep = 0.746
+[2026-10-22 22:30:41.906] 1.30.148.390 I slot launch_slot_: id  0 | task 115 | processing task, is_child = 0
+[2026-10-22 22:30:48.730] 1.36.974.355 I slot print_timing: id  0 | task 115 | prompt processing, n_tokens =    113, progress = 0.96, t =   6.82 s / 16.57 tokens per second
+[2026-10-22 22:30:49.471] 1.37.716.358 I slot print_timing: id  0 | task 115 | prompt processing, n_tokens =    126, progress = 0.99, t =   7.56 s / 16.66 tokens per second
+[2026-10-22 22:31:10.610] 1.58.840.914 I slot print_timing: id  0 | task 115 | n_gen =    100, tg =   4.81 t/s, tg_3s =   4.86 t/s
+[2026-10-22 22:31:13.609] 2.01.852.246 I slot print_timing: id  0 | task 115 | n_gen =    117, tg =   4.92 t/s, tg_3s =   5.64 t/s
+[2026-10-22 22:31:16.802] 2.05.045.725 I slot print_timing: id  0 | task 115 | n_gen =    138, tg =   5.12 t/s, tg_3s =   6.58 t/s
+[2026-10-22 22:31:18.620] 2.06.865.399 I slot print_timing: id  0 | task 115 | prompt eval time =    8111.76 ms /   130 tokens (   62.40 ms per token,    16.03 tokens per second)
+[2026-10-22 22:31:18.626] 2.06.865.472 I slot print_timing: id  0 | task 115 |        eval time =   28600.26 ms /   154 tokens (  186.93 ms per token,     5.35 tokens per second)
+[2026-10-22 22:31:18.634] 2.06.865.481 I slot print_timing: id  0 | task 115 |       total time =   36712.02 ms /   284 tokens
+[2026-10-22 22:31:18.654] 2.06.865.486 I slot print_timing: id  0 | task 115 |    graphs reused =        262
+[2026-10-22 22:31:18.661] 2.06.865.986 I slot print_timing: id  0 | task 115 |   graph reallocs =          0    /     0        (same size) / (changed size)
+[2026-10-22 22:31:18.666] 2.06.871.708 I slot      release: id  0 | task 115 | stop processing: n_tokens = 621, truncated = 0
+[2026-10-22 22:32:29.695] 3.17.936.950 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.730 (> 0.100 thold), f_keep = 0.747
+[2026-10-22 22:32:29.709] 3.17.952.939 I slot launch_slot_: id  0 | task 272 | processing task, is_child = 0
+[2026-10-22 22:32:36.402] 3.24.647.185 I slot print_timing: id  0 | task 272 | prompt processing, n_tokens =    155, progress = 0.97, t =   6.69 s / 23.16 tokens per second
+[2026-10-22 22:32:36.963] 3.25.206.753 I slot print_timing: id  0 | task 272 | prompt processing, n_tokens =    168, progress = 0.99, t =   7.25 s / 23.17 tokens per second
+[2026-10-22 22:32:56.400] 3.44.593.602 I slot print_timing: id  0 | task 272 | n_gen =    100, tg =   5.28 t/s, tg_3s =   5.33 t/s
+[2026-10-22 22:32:59.372] 3.47.614.072 I slot print_timing: id  0 | task 272 | n_gen =    109, tg =   4.96 t/s, tg_3s =   2.98 t/s
+[2026-10-22 22:33:02.403] 3.50.647.631 I slot print_timing: id  0 | task 272 | n_gen =    128, tg =   5.12 t/s, tg_3s =   6.26 t/s
+[2026-10-22 22:33:06.568] 3.54.813.126 I slot print_timing: id  0 | task 272 | n_gen =    142, tg =   4.86 t/s, tg_3s =   3.36 t/s
+[2026-10-22 22:33:09.633] 3.57.877.322 I slot print_timing: id  0 | task 272 | n_gen =    148, tg =   4.59 t/s, tg_3s =   1.96 t/s
+[2026-10-22 22:33:12.678] 4.00.923.231 I slot print_timing: id  0 | task 272 | n_gen =    157, tg =   4.44 t/s, tg_3s =   2.95 t/s
+[2026-10-22 22:33:15.716] 4.03.960.610 I slot print_timing: id  0 | task 272 | n_gen =    175, tg =   4.56 t/s, tg_3s =   5.93 t/s
+[2026-10-22 22:33:18.990] 4.07.235.191 I slot print_timing: id  0 | task 272 | n_gen =    182, tg =   4.37 t/s, tg_3s =   2.14 t/s
+[2026-10-22 22:33:26.829] 4.15.065.465 I slot print_timing: id  0 | task 272 | n_gen =    187, tg =   3.78 t/s, tg_3s =   0.64 t/s
+[2026-10-22 22:33:30.603] 4.18.846.379 I slot print_timing: id  0 | task 272 | n_gen =    195, tg =   3.66 t/s, tg_3s =   2.12 t/s
+[2026-10-22 22:33:33.722] 4.21.967.546 I slot print_timing: id  0 | task 272 | n_gen =    201, tg =   3.56 t/s, tg_3s =   1.92 t/s
+[2026-10-22 22:33:36.782] 4.25.027.393 I slot print_timing: id  0 | task 272 | n_gen =    213, tg =   3.58 t/s, tg_3s =   3.92 t/s
+[2026-10-22 22:33:37.962] 4.26.205.766 I slot print_timing: id  0 | task 272 | prompt eval time =    7869.61 ms /   172 tokens (   45.75 ms per token,    21.86 tokens per second)
+[2026-10-22 22:33:37.974] 4.26.206.229 I slot print_timing: id  0 | task 272 |        eval time =   60376.17 ms /   219 tokens (  276.95 ms per token,     3.61 tokens per second)
+[2026-10-22 22:33:37.982] 4.26.206.246 I slot print_timing: id  0 | task 272 |       total time =   68245.79 ms /   391 tokens
+[2026-10-22 22:33:37.988] 4.26.206.251 I slot print_timing: id  0 | task 272 |    graphs reused =        478
+[2026-10-22 22:33:37.994] 4.26.206.255 I slot print_timing: id  0 | task 272 |   graph reallocs =          0    /     0        (same size) / (changed size)
+[2026-10-22 22:33:38.003] 4.26.219.136 I slot      release: id  0 | task 272 | stop processing: n_tokens = 854, truncated = 0
+[2026-10-22 22:38:23.915] stopped
+[2026-10-22 22:38:23.974] service: foreground service stopped
+[2026-10-22 23:18:06.427] API key changed
+[2026-10-22 23:18:13.751] started on http://localhost:8080
+[2026-10-22 23:18:13.802] service: foreground service started
+[2026-10-22 23:18:13.881] warning: no usable GPU found, --gpu-layers option will be ignored
+[2026-10-22 23:18:13.885] warning: one possible reason is that llama.cpp was compiled without GPU support
+[2026-10-22 23:18:13.887] warning: consult docs/build.md for compilation instructions
+[2026-10-22 23:18:13.891] 0.00.036.356 I srv  llama_server: initializing ...
+[2026-10-22 23:18:13.895] 0.00.036.378 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+[2026-10-22 23:18:13.899] 0.00.043.652 I srv    load_model: loading model '/data/user/0/dev.bionicshell.app/files/models/Qwen3.5-0.8B-IQ4_XS.gguf'
+[2026-10-22 23:18:17.376] 0.03.524.673 I cmn          init: llama threadpool init, n_threads = 4
+[2026-10-22 23:18:19.227] 0.05.382.079 I srv    load_model: initializing, n_slots = 4, n_ctx_slot = 4096, kv_unified = 'true'
+[2026-10-22 23:18:19.297] 0.05.451.463 I srv  llama_server: model loaded
+[2026-10-22 23:18:19.304] 0.05.451.540 I srv  llama_server: listening on http://127.0.0.1:8080
+[2026-10-22 23:18:28.417] 0.14.567.888 W srv    operator(): unauthorized: Invalid API Key
+[2026-10-22 23:18:28.452] 0.14.584.307 W srv    operator(): unauthorized: Invalid API Key
+[2026-10-22 23:18:29.456] 0.15.610.517 W srv    operator(): unauthorized: Invalid API Key
+[2026-10-22 23:18:29.559] 0.15.714.345 W srv    operator(): unauthorized: Invalid API Key
+[2026-10-22 23:19:18.539] 1.04.684.267 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1
+[2026-10-22 23:19:18.597] 1.04.702.432 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+[2026-10-22 23:19:32.564] 1.18.717.686 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    322, progress = 0.96, t =  14.01 s / 22.98 tokens per second
+[2026-10-22 23:19:33.080] 1.19.234.598 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    331, progress = 0.99, t =  14.53 s / 22.78 tokens per second
+[2026-10-22 23:19:35.266] 1.21.420.321 I slot print_timing: id  0 | task 0 | prompt eval time =   15146.56 ms /   335 tokens (   45.21 ms per token,    22.12 tokens per second)
+[2026-10-22 23:19:35.277] 1.21.420.371 I slot print_timing: id  0 | task 0 |        eval time =    1566.99 ms /    10 tokens (  174.11 ms per token,     5.74 tokens per second)
+[2026-10-22 23:19:35.284] 1.21.420.376 I slot print_timing: id  0 | task 0 |       total time =   16713.55 ms /   345 tokens
+[2026-10-22 23:19:35.289] 1.21.420.381 I slot print_timing: id  0 | task 0 |    graphs reused =          9
+[2026-10-22 23:19:35.294] 1.21.420.384 I slot print_timing: id  0 | task 0 |   graph reallocs =          0    /     0        (same size) / (changed size)
+[2026-10-22 23:19:35.305] 1.21.423.824 I slot      release: id  0 | task 0 | stop processing: n_tokens = 344, truncated = 0
+[2026-10-22 23:20:33.624] 2.19.773.962 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.922 (> 0.100 thold), f_keep = 0.962
+[2026-10-22 23:20:33.670] 2.19.791.217 I slot launch_slot_: id  0 | task 13 | processing task, is_child = 0
+[2026-10-22 23:20:37.447] 2.23.600.613 I slot print_timing: id  0 | task 13 | prompt processing, n_tokens =     11, progress = 0.95, t =   3.81 s / 2.89 tokens per second
+[2026-10-22 23:20:38.449] 2.24.603.358 I slot print_timing: id  0 | task 13 | prompt processing, n_tokens =     24, progress = 0.99, t =   4.81 s / 4.99 tokens per second
+[2026-10-22 23:21:13.065] 2.59.199.817 I slot print_timing: id  0 | task 13 | n_gen =    100, tg =   2.97 t/s, tg_3s =   3.00 t/s
+[2026-10-22 23:21:17.343] 3.03.492.934 I slot print_timing: id  0 | task 13 | n_gen =    117, tg =   3.08 t/s, tg_3s =   3.96 t/s
+[2026-10-22 23:21:20.777] 3.06.932.261 I slot print_timing: id  0 | task 13 | n_gen =    118, tg =   2.85 t/s, tg_3s =   0.29 t/s
+[2026-10-22 23:21:23.805] 3.09.958.501 I slot print_timing: id  0 | task 13 | n_gen =    129, tg =   2.90 t/s, tg_3s =   3.64 t/s
+[2026-10-22 23:21:26.860] 3.13.008.918 I slot print_timing: id  0 | task 13 | n_gen =    158, tg =   3.33 t/s, tg_3s =   9.51 t/s
+[2026-10-22 23:21:29.922] 3.16.076.364 I slot print_timing: id  0 | task 13 | n_gen =    179, tg =   3.54 t/s, tg_3s =   6.85 t/s
+[2026-10-22 23:21:36.051] 3.22.193.348 I slot print_timing: id  0 | task 13 | n_gen =    189, tg =   3.34 t/s, tg_3s =   1.63 t/s
+[2026-10-22 23:21:39.385] 3.25.537.152 I slot print_timing: id  0 | task 13 | n_gen =    208, tg =   3.47 t/s, tg_3s =   5.68 t/s
+[2026-10-22 23:21:43.220] 3.29.373.885 I slot print_timing: id  0 | task 13 | n_gen =    226, tg =   3.54 t/s, tg_3s =   4.69 t/s
+[2026-10-22 23:21:49.915] 3.36.043.465 I slot print_timing: id  0 | task 13 | n_gen =    229, tg =   3.25 t/s, tg_3s =   0.45 t/s
+[2026-10-22 23:21:54.432] 3.40.583.784 I slot print_timing: id  0 | task 13 | n_gen =    230, tg =   3.06 t/s, tg_3s =   0.22 t/s
+[2026-10-22 23:21:59.223] 3.45.374.226 I slot print_timing: id  0 | task 13 | n_gen =    247, tg =   3.09 t/s, tg_3s =   3.55 t/s
+[2026-10-22 23:22:04.460] 3.50.607.958 I slot print_timing: id  0 | task 13 | n_gen =    248, tg =   2.91 t/s, tg_3s =   0.19 t/s
+[2026-10-22 23:22:12.729] 3.58.870.128 I slot print_timing: id  0 | task 13 | n_gen =    249, tg =   2.67 t/s, tg_3s =   0.12 t/s
+[2026-10-22 23:22:15.815] 4.01.969.711 I slot print_timing: id  0 | task 13 | n_gen =    262, tg =   2.71 t/s, tg_3s =   4.19 t/s
+[2026-10-22 23:22:19.187] 4.05.340.457 I slot print_timing: id  0 | task 13 | n_gen =    269, tg =   2.69 t/s, tg_3s =   2.08 t/s
+[2026-10-22 23:22:22.441] 4.08.593.924 I slot print_timing: id  0 | task 13 | n_gen =    276, tg =   2.68 t/s, tg_3s =   2.15 t/s
+[2026-10-22 23:22:25.561] 4.11.716.093 I slot print_timing: id  0 | task 13 | n_gen =    296, tg =   2.79 t/s, tg_3s =   6.41 t/s
+[2026-10-22 23:22:31.171] 4.17.282.079 I slot print_timing: id  0 | task 13 | n_gen =    301, tg =   2.69 t/s, tg_3s =   0.90 t/s
+[2026-10-22 23:22:34.150] 4.20.297.203 I slot print_timing: id  0 | task 13 | n_gen =    311, tg =   2.71 t/s, tg_3s =   3.32 t/s
+[2026-10-22 23:22:37.504] 4.23.653.190 I slot print_timing: id  0 | task 13 | n_gen =    313, tg =   2.65 t/s, tg_3s =   0.60 t/s
+[2026-10-22 23:22:44.974] 4.31.126.467 I slot print_timing: id  0 | task 13 | n_gen =    316, tg =   2.51 t/s, tg_3s =   0.40 t/s
+[2026-10-22 23:22:50.006] 4.36.143.163 I slot print_timing: id  0 | task 13 | n_gen =    317, tg =   2.43 t/s, tg_3s =   0.20 t/s
+[2026-10-22 23:22:59.370] 4.45.515.539 I slot print_timing: id  0 | task 13 | n_gen =    318, tg =   2.27 t/s, tg_3s =   0.11 t/s
+[2026-10-22 23:23:02.535] 4.48.689.557 I slot print_timing: id  0 | task 13 | n_gen =    320, tg =   2.23 t/s, tg_3s =   0.63 t/s
+[2026-10-22 23:23:07.483] 4.53.634.423 I slot print_timing: id  0 | task 13 | n_gen =    324, tg =   2.19 t/s, tg_3s =   0.81 t/s
+[2026-10-22 23:23:12.430] 4.58.581.357 I slot print_timing: id  0 | task 13 | n_gen =    326, tg =   2.13 t/s, tg_3s =   0.40 t/s
+[2026-10-22 23:23:16.126] 5.02.280.701 I slot print_timing: id  0 | task 13 | n_gen =    328, tg =   2.09 t/s, tg_3s =   0.54 t/s
+[2026-10-22 23:23:19.350] 5.05.504.361 I slot print_timing: id  0 | task 13 | prompt eval time =    6040.80 ms /    28 tokens (  215.74 ms per token,     4.64 tokens per second)
+[2026-10-22 23:23:19.357] 5.05.504.419 I slot print_timing: id  0 | task 13 |        eval time =  159668.29 ms /   345 tokens (  464.15 ms per token,     2.15 tokens per second)
+[2026-10-22 23:23:19.367] 5.05.504.513 I slot print_timing: id  0 | task 13 |       total time =  165709.09 ms /   373 tokens
+[2026-10-22 23:23:19.373] 5.05.504.528 I slot print_timing: id  0 | task 13 |    graphs reused =        351
+[2026-10-22 23:23:19.380] 5.05.504.875 I slot print_timing: id  0 | task 13 |   graph reallocs =          0    /     0        (same size) / (changed size)
+[2026-10-22 23:23:19.388] 5.05.511.038 I slot      release: id  0 | task 13 | stop processing: n_tokens = 703, truncated = 0
+[2026-10-22 23:24:16.027] stopped
+[2026-10-22 23:24:16.073] service: foreground service stopped
+[2026-10-23 10:02:45.744] sampling: temp=0.7 top_p=0.8 top_k=20 min_p=0.0 repeat=1.0 presence=1.5
+[2026-10-23 10:02:45.768] started on http://localhost:8080
+[2026-10-23 10:02:45.825] service: foreground service started
+[2026-10-23 10:02:45.908] warning: no usable GPU found, --gpu-layers option will be ignored
+[2026-10-23 10:02:45.910] warning: one possible reason is that llama.cpp was compiled without GPU support
+[2026-10-23 10:02:45.914] warning: consult docs/build.md for compilation instructions
+[2026-10-23 10:02:45.917] 0.00.030.699 I srv  llama_server: initializing ...
+[2026-10-23 10:02:45.921] 0.00.030.723 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+[2026-10-23 10:02:45.928] 0.00.037.519 I srv    load_model: loading model '/data/user/0/dev.bionicshell.app/files/models/Qwen3.5-0.8B-IQ4_XS.gguf'
+[2026-10-23 10:02:49.054] 0.03.176.157 I cmn          init: llama threadpool init, n_threads = 2
+[2026-10-23 10:02:49.301] 0.03.423.102 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 4096, kv_unified = 'false'
+[2026-10-23 10:02:49.323] 0.03.445.805 I srv  llama_server: model loaded
+[2026-10-23 10:02:49.327] 0.03.445.824 I srv  llama_server: listening on http://127.0.0.1:8080
+[2026-10-23 10:03:12.873] 0.26.993.537 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1
+[2026-10-23 10:03:12.941] 0.27.006.993 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+[2026-10-23 10:03:24.174] 0.38.296.266 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    322, progress = 0.96, t =  11.29 s / 28.53 tokens per second
+[2026-10-23 10:03:24.546] 0.38.668.433 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    331, progress = 0.99, t =  11.66 s / 28.38 tokens per second
+[2026-10-23 10:03:26.009] 0.40.131.103 I slot print_timing: id  0 | task 0 | prompt eval time =   12140.56 ms /   335 tokens (   36.24 ms per token,    27.59 tokens per second)
+[2026-10-23 10:03:26.020] 0.40.131.134 I slot print_timing: id  0 | task 0 |        eval time =     981.61 ms /    10 tokens (  109.07 ms per token,     9.17 tokens per second)
+[2026-10-23 10:03:26.028] 0.40.131.165 I slot print_timing: id  0 | task 0 |       total time =   13122.17 ms /   345 tokens
+[2026-10-23 10:03:26.031] 0.40.131.189 I slot print_timing: id  0 | task 0 |    graphs reused =          9
+[2026-10-23 10:03:26.034] 0.40.131.197 I slot print_timing: id  0 | task 0 |   graph reallocs =          0    /     0        (same size) / (changed size)
+[2026-10-23 10:03:26.037] 0.40.137.960 I slot      release: id  0 | task 0 | stop processing: n_tokens = 344, truncated = 0
+[2026-10-23 10:03:46.843] 1.00.963.181 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.919 (> 0.100 thold), f_keep = 0.962
+[2026-10-23 10:03:46.867] 1.00.972.759 I slot launch_slot_: id  0 | task 13 | processing task, is_child = 0
+[2026-10-23 10:03:50.758] 1.04.879.287 I slot print_timing: id  0 | task 13 | prompt eval time =    2322.03 ms /    29 tokens (   80.07 ms per token,    12.49 tokens per second)
+[2026-10-23 10:03:50.779] 1.04.879.296 I slot print_timing: id  0 | task 13 |        eval time =    1584.35 ms /    21 tokens (   79.22 ms per token,    12.62 tokens per second)
+[2026-10-23 10:03:50.787] 1.04.879.298 I slot print_timing: id  0 | task 13 |       total time =    3906.37 ms /    50 tokens
+[2026-10-23 10:03:50.796] 1.04.879.299 I slot print_timing: id  0 | task 13 |    graphs reused =         28
+[2026-10-23 10:03:50.807] 1.04.879.300 I slot print_timing: id  0 | task 13 |   graph reallocs =          0    /     0        (same size) / (changed size)
+[2026-10-23 10:03:50.810] 1.04.880.937 I slot      release: id  0 | task 13 | stop processing: n_tokens = 380, truncated = 0
+[2026-10-23 10:04:33.988] 1.48.107.036 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.864 (> 0.100 thold), f_keep = 0.937
+[2026-10-23 10:04:34.017] 1.48.124.161 I slot launch_slot_: id  0 | task 37 | processing task, is_child = 0
+[2026-10-23 10:04:37.029] 1.51.150.166 I slot print_timing: id  0 | task 37 | prompt processing, n_tokens =     52, progress = 0.99, t =   3.03 s / 17.19 tokens per second
+[2026-10-23 10:04:45.884] 2.00.005.880 I slot print_timing: id  0 | task 37 | n_gen =    100, tg =  11.89 t/s, tg_3s =  12.01 t/s
+[2026-10-23 10:04:48.888] 2.03.009.640 I slot print_timing: id  0 | task 37 | n_gen =    135, tg =  11.83 t/s, tg_3s =  11.64 t/s
+[2026-10-23 10:04:51.998] 2.06.119.975 I slot print_timing: id  0 | task 37 | n_gen =    164, tg =  11.29 t/s, tg_3s =   9.32 t/s
+[2026-10-23 10:04:55.012] 2.09.134.480 I slot print_timing: id  0 | task 37 | n_gen =    198, tg =  11.29 t/s, tg_3s =  11.28 t/s
+[2026-10-23 10:04:58.026] 2.12.148.401 I slot print_timing: id  0 | task 37 | n_gen =    232, tg =  11.29 t/s, tg_3s =  11.28 t/s
+[2026-10-23 10:05:01.096] 2.15.218.743 I slot print_timing: id  0 | task 37 | n_gen =    266, tg =  11.26 t/s, tg_3s =  11.07 t/s
+[2026-10-23 10:05:04.233] 2.18.353.433 I slot print_timing: id  0 | task 37 | n_gen =    294, tg =  10.98 t/s, tg_3s =   8.93 t/s
+[2026-10-23 10:05:07.268] 2.21.390.759 I slot print_timing: id  0 | task 37 | n_gen =    326, tg =  10.94 t/s, tg_3s =  10.54 t/s
+[2026-10-23 10:05:10.308] 2.24.429.586 I slot print_timing: id  0 | task 37 | n_gen =    360, tg =  10.96 t/s, tg_3s =  11.19 t/s
+[2026-10-23 10:05:11.851] 2.25.972.223 I slot print_timing: id  0 | task 37 | prompt eval time =    3554.30 ms /    56 tokens (   63.47 ms per token,    15.76 tokens per second)
+[2026-10-23 10:05:11.855] 2.25.973.209 I slot print_timing: id  0 | task 37 |        eval time =   34293.43 ms /   373 tokens (   92.19 ms per token,    10.85 tokens per second)
+[2026-10-23 10:05:11.858] 2.25.973.229 I slot print_timing: id  0 | task 37 |       total time =   37847.73 ms /   429 tokens
+[2026-10-23 10:05:11.862] 2.25.973.230 I slot print_timing: id  0 | task 37 |    graphs reused =        397
+[2026-10-23 10:05:11.867] 2.25.973.232 I slot print_timing: id  0 | task 37 |   graph reallocs =          0    /     0        (same size) / (changed size)
+[2026-10-23 10:05:11.872] 2.25.980.501 I slot      release: id  0 | task 37 | stop processing: n_tokens = 784, truncated = 0
+[2026-10-23 10:22:24.590] stopped
+[2026-10-23 10:22:24.623] service: foreground service stopped
+""" 
